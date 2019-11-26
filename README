@@ -1,0 +1,32 @@
+cpp_ex3
+nadav366
+205457534
+######
+
+The software contains a map data structure and software that uses the data structure and is
+ a spam detector.
+
+HashMap Class-
+     I chose to implement the class by a array of vectors containing key and value pairs.
+     This is because I have complete control over the size of the table, but it is
+     relatively easy to insert and access more pairs of each vector.
+     The data structure gives us access to an average time of O (1) and an average
+     construction of O (n)
+     Each entry and deletion of a value has a check whether the size of the table
+     should be re-adjusted, in multiples of two.
+
+     The map has an iterator based on two indexes - of the table and within the appropriate vector,
+     so you can easily move and move across the data structure.
+
+    The data structure is a template and can fit any type of key and value.
+
+SpamDetector-
+    Software that receives three parameters - a file path containing their suspicious sentences
+    and their score, a text file and a score runner to be considered as spam.
+
+    The software is built on three functions -
+    First - running everything and printing.
+    Reading and analyzing the information file - analyzes the file, checks its validity and
+    adds the information to a data map.
+    A third function that analyzes the information file and checks the entire database for
+    each row.
